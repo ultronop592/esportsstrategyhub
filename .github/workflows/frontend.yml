@@ -11,8 +11,10 @@ on:
       - 'frontend/**'
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for deployment to GitHub Pages
 
     defaults:
       run:
@@ -37,11 +39,19 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Type check
+        run: npm run type-check
+
       - name: Build
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
         run: npm run build
 
-      # Optional: Add deployment steps here
-      # - name: Deploy
-      #   if: github.ref == 'refs/heads/main'
-      #   run: |
-      #     # Add deployment commands
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./frontend/dist
+          full_commit_message: ${{ github.event.head_commit.message }}
+          force_orphan: true # Creates a new orphan branch for clean deployment history
