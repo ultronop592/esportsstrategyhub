@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist && git config --global user.name 'ultronop592' && git config --global user.email 'ultronop558@gmail.com'"
+    "deploy": "gh-pages -d dist -u 'ultronop592 <ultronop558@gmail.com>'"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -20,14 +20,7 @@
     "testMatch": [
       "**/__tests__/**/*.[jt]s?(x)",
       "**/?(*.)+(spec|test).[tj]s?(x)"
-    ],
-    "transform": {
-      "^.+\\.(ts|tsx)$": "babel-jest"
-    },
-    "moduleNameMapper": {
-      "^@/(.*)$": "<rootDir>/src/$1"
-    },
-    "testEnvironment": "jest-environment-jsdom"
+    ]
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.3",
