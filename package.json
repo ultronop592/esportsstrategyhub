@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "test": "jest",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist  && git config --global user.name "ultronop592" && git config --global user.email "ultronop558@gmail.com"
   },
   "jest": {
     "setupFilesAfterEnv": [
