@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+//import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 const handcamVideos = [
   {
@@ -39,7 +39,7 @@ const handcamVideos = [
   },
 ]
 
-import React from 'react';
+//import React from 'react';
 
 const Handcams = () => {
   return (

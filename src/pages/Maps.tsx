@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+//import { Box, Text } from '@chakra-ui/react';
 //import { Button } from '@/components/ui/button'
-import React from 'react';
+//import React from 'react';
 import {
   Accordion,
   AccordionContent,
