@@ -4,13 +4,5 @@ import * as path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    port: 5173,
-    host: true,
-  },
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src'),
-    },
-  },
+  base: '/esportsstrategyhub/',
 })
