@@ -38,6 +38,52 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-primary">Contact Us</DialogTitle>
         </DialogHeader>
+
+                    {/* Saujanya's Contact */}
+            <div className="rounded-lg bg-muted p-4">
+              <div className="font-medium mb-3">Saujanya Tripathi</div>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Mail className="h-4 w-4 text-muted-foreground" />
+                    <a 
+                      href="mailto:iamsaujanya.ig@gmail.com"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      iamsaujanya.ig@gmail.com
+                    </a>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-7 w-7 p-0"
+                    onClick={() => handleCopy('iamsaujanya.ig@gmail.com', setCopiedEmail2)}
+                  >
+                    {copiedEmail2 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                  </Button>
+                </div>
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Phone className="h-4 w-4 text-muted-foreground" />
+                    <a 
+                      href="tel:+919026573452"
+                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      +91 9026573452
+                    </a>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className="h-7 w-7 p-0"
+                    onClick={() => handleCopy('+919026573452', setCopiedPhone2)}
+                  >
+                    {copiedPhone2 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         
         <div className="space-y-4 py-4">
           {/* Contact Cards */}
@@ -86,52 +132,6 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
                 </div>
               </div>
             </div>
-
-            {/* Saujanya's Contact */}
-            <div className="rounded-lg bg-muted p-4">
-              <div className="font-medium mb-3">Saujanya</div>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 text-muted-foreground" />
-                    <a 
-                      href="mailto:iamsaujanya.ig@gmail.com"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      iamsaujanya.ig@gmail.com
-                    </a>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="h-7 w-7 p-0"
-                    onClick={() => handleCopy('iamsaujanya.ig@gmail.com', setCopiedEmail2)}
-                  >
-                    {copiedEmail2 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                  </Button>
-                </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 text-muted-foreground" />
-                    <a 
-                      href="tel:+919026573452"
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      +91 9026573452
-                    </a>
-                  </div>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="h-7 w-7 p-0"
-                    onClick={() => handleCopy('+919026573452', setCopiedPhone2)}
-                  >
-                    {copiedPhone2 ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <div className="text-xs text-center text-muted-foreground">
             Available Monday - Friday, 9:00 AM - 6:00 PM IST
