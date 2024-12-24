@@ -3,12 +3,15 @@
   "private": true,
   "version": "0.1.0",
   "type": "commonjs",
+  "homepage": "https://ultronop592.github.io/esportsstrategyhub",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -67,7 +70,8 @@
     "tailwindcss": "^3.4.16",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.7.2",
-    "vite": "^4.5.5"
+    "vite": "^4.5.5",
+    "gh-pages": "^4.0.0"
   },
   "description": "A modern web application built with Vite, React, and TypeScript for sharing esports strategies and tutorials.",
   "main": "eslint.config.js",
