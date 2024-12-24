@@ -38,7 +38,9 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-primary">Contact Us</DialogTitle>
         </DialogHeader>
-
+        
+        <div className="space-y-4 py-4">
+            {/* Contact Cards */}
                     {/* Saujanya's Contact */}
             <div className="rounded-lg bg-muted p-4">
               <div className="font-medium mb-3">Saujanya Tripathi</div>
@@ -83,10 +85,9 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
                 </div>
               </div>
             </div>
-          </div>
         
-        <div className="space-y-4 py-4">
-          {/* Contact Cards */}
+        
+        
           <div className="grid gap-4">
             {/* Srajal's Contact */}
             <div className="rounded-lg bg-muted p-4">
@@ -132,7 +133,7 @@ const ContactDialog = ({ children }: ContactDialogProps) => {
                 </div>
               </div>
             </div>
-
+          </div>
           <div className="text-xs text-center text-muted-foreground">
             Available Monday - Friday, 9:00 AM - 6:00 PM IST
           </div>
