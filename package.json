@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "commonjs",
-  "homepage": "https://ultronop592.github.io/esportsstrategyhub",
+  "homepage": "https://ultronop592.github.io/esportsstrategyhub/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
