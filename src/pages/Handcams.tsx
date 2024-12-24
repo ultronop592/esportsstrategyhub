@@ -39,6 +39,8 @@ const handcamVideos = [
   },
 ]
 
+import React from 'react';
+
 const Handcams = () => {
   return (
     <div className="container mx-auto px-4 pt-20">
