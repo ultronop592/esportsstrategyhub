@@ -1,4 +1,4 @@
-//import React from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@/components/theme-provider';
 import Navbar from '@/components/Navbar';
