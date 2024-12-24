@@ -22,7 +22,7 @@ const App = () => {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/esportsstrategyhub" element={<Home />} />
           <Route path="/maps" element={<Maps />} />
           <Route path="/weapons" element={<Weapons />} />
           <Route path="/throwables" element={<Throwables />} />
