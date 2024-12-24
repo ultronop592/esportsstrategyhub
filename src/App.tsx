@@ -1,4 +1,3 @@
-import { Routes, Route } from 'react-router-dom'
 import { ThemeProvider } from '@/components/theme-provider'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -14,9 +13,11 @@ import PrivacyPolicy from '@/pages/PrivacyPolicy'
 import TermsOfService from '@/pages/TermsOfService'
 import PatchNotes from '@/pages/PatchNotes'
 import Search from '@/pages/Search'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
+    <BrowserRouter basename="/esportsstrategyhub">
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="min-h-screen bg-background font-sans antialiased">
         <Navbar />
@@ -37,6 +38,7 @@ const App = () => {
         <Footer />
       </div>
     </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
