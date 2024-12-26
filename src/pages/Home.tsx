@@ -34,7 +34,7 @@ const Home = () => {
       <div className="text-center mb-28 relative">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background -z-10"></div>
         <div className="space-y-10">
-          <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/90 to-primary/80 leading-normal pb-1">
+          <h1 className="text-5xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/90 to-primary/80 leading-relaxed pb-2 mb-1">
             eSports Strategy Hub
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -145,7 +145,7 @@ const Home = () => {
         />
         <FeatureCard
           title="Sensitivity Guide"
-          description="Find the perfect sensitivity settings for your playstyle."
+          description="Find and implement the perfect sensitivity settings for your playstyle."
           link="/sensitivity"
         />
         <FeatureCard
