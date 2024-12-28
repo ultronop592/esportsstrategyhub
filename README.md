@@ -45,7 +45,6 @@ The built files will be in the `dist` directory.
 - `npm run dev` - Start development server
 - `npm run build` - Create production build
 - `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint
 
 ## Project Structure
 
